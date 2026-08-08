@@ -4,7 +4,7 @@ import requests
 import uuid
 from datetime import datetime, timezone
 
-VIDEO_PATH = "clip1.mp4"
+VIDEO_PATH = "clip2.mp4"
 
 model = YOLO("yolov8n.pt")
 
@@ -65,7 +65,7 @@ print(f"Detected video FPS: {fps_estimate}")
 
 
 results = model.track(
-    source="clip1.mp4",
+    source="clip2.mp4",
     classes=[0],
     conf=0.5,
     persist=True,
