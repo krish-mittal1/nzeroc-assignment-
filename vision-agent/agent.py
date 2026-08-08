@@ -65,7 +65,7 @@ print(f"Detected video FPS: {fps_estimate}")
 
 
 results = model.track(
-    source="clip2.mp4",
+    source=VIDEO_PATH,
     classes=[0],
     conf=0.5,
     persist=True,
